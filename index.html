@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--    FONTS   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Text+Me+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--    HEADER  -->
+    <div id="topMidContainer">
+        <div id="settingsButton">
+            <img src="./images/Settings_icon(iOS)_scaled.png" alt="Settings Icon" />
+        </div>
+        <h1 id="welcomePhrase">Hello There!</h1>
+        <div id="dateWidget">
+            <p id="showDate" class="">Date</p>
+            <h2 id="showTime" class="">Time</h2>
+            <p id="showWeek" class="">Week-</p>
+        </div>
+        <div id="weatherWidget">
+            <div id="displayCity"></div>
+            <div id="displayDegrees"></div>
+        </div>
+    </div>
+
+
+    <!--    HOTLINKS    -->
+    <div id="hotlinksContainer">
+        <a href="https://www.youtube.com/">
+            <div class="hotlinkButton">
+                YouTube
+            </div>
+        </a>
+
+        <a href="https://mail.google.com/mail/">
+            <div class="hotlinkButton">
+                Gmail
+            </div>
+        </a>
+
+        <a href="http://onhockey.tv">
+            <div class="hotlinkButton">
+                OnHockey
+            </div>
+        </a>
+
+        <a href="https://arcada.itslearning.com">
+            <div class="hotlinkButton">
+                itslearning
+            </div>
+        </a>
+
+        <a href="https://sisu.arcada.fi/">
+            <div class="hotlinkButton">
+                Sisu
+            </div>
+        </a>
+
+        <a href="https://chat.openai.com/">
+            <div class="hotlinkButton">
+                Chat
+            </div>
+        </a>
+
+        <a href="https://www.nettiauto.com/">
+            <div class="hotlinkButton">
+                nettiauto
+            </div>
+        </a>
+
+        <a href="https://www.flashscore.com/hockey/">
+            <div class="hotlinkButton">
+                flashscore
+            </div>
+        </a>
+    </div>
+
+    <!--    SETTINGS    -->
+    <div id="settingsUI">
+        <div id="settingsBox">
+            <h2>Weather API-key:</h2>
+            <input type="password" id="apiInput" placeholder="Enter API-key...">
+            <input type="button" id="saveSettingsButton" value="Save">
+        </div>
+    </div>
+
+    <script src="./javascript/dateWidget.js"></script>
+    <script src="./javascript/wallpaper.js"></script>
+    <script src="./javascript/settings.js"></script>
+    <script src="./javascript/welcomePhrase.js"></script>
+    <script src="./javascript/weatherAPI.js"></script>
+</body>
+
+</html>

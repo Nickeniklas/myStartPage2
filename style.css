@@ -1,0 +1,142 @@
+body {
+    /*     default  =  cookie dough */
+    background-color: #cdb79e;
+    background-size: cover;
+    margin: 0;
+
+    /*  70% in the middle   
+    width: 70%;
+    margin: auto;*/
+}
+
+#welcomePhrase {
+    font-family: "Fugaz One";
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+#settingsUI {
+    display: none;
+    justify-content: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 101%;
+    height: 101%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+#settingsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    background-color: whitesmoke;
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+}
+#settingsBox h2, input {
+    font-family: "Text Me One";
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 0;
+}
+#settingsBox input {width: 200px;}
+#settingsButton {
+    align-self: flex-start; 
+    margin: 0;
+    padding: 0;
+}
+#settingsButton img {
+    height: 25px;
+    width: 25px;
+}
+
+/* dateWidget & weatherWidget*/
+#dateWidget, #weatherWidget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 20px;
+    
+    text-align: center;
+}
+#weatherWidget {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topMidContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 10%;
+    gap: 10px;
+}
+
+#showTime {
+    font-size: 44px;
+    margin: 0;
+}
+#showDate, #showWeek, #weatherWidget {
+    font-size: 24px;
+}
+#showDate, #showWeek, #showTime, #weatherWidget {
+    color: whitesmoke;
+    font-family: "Text Me One"
+}
+/* dateWidget END */
+
+
+/*  Hotlink buttons */
+#hotlinksContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60%;
+    margin: auto;
+
+    gap: 5px;
+}
+
+.hotlinkButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+#hotlinksContainer a {
+    font-size: 28px;
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Fugaz One";
+}
+#hotlinksContainer a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(245, 245, 245, 0.75);
+    border-radius: 5px;
+}
+#hotlinksContainer a:active {
+    color: rgb(177, 174, 174);
+    background-color: rgb(53, 50, 50);
+    border-radius: 5px;
+}
+/*  Hotlink buttons END */
