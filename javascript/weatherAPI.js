@@ -6,12 +6,19 @@ const lon = 24.936448;
 //  Weather API function
 let api_key = localStorage.getItem('weather_key');
 async function getWeather(lat, lon) {
-    const resp = await fetch("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + lat + "&lon=" + lon + "&APPID=" + api_key);
-    const respJson = await resp.json();
+    try {
+        const resp = await fetch("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + lat + "&lon=" + lon + "&APPID=" + api_key);
+        
+        if (!resp.ok) {
+            throw new Error("Network response was not ok");
+        }
 
-    //console.log(respJson)
-    
-    document.querySelector("#displayCity").innerHTML = respJson.name;
-    document.querySelector("#displayDegrees").innerHTML = respJson.main.temp + "°";
+        const respJson = await resp.json();
+        document.querySelector("#displayCity").innerHTML = respJson.name;
+        document.querySelector("#displayDegrees").innerHTML = respJson.main.temp + "°";
+        
+    } catch (error) {
+        console.log("Weather api not working properly...");
+    }
 }
 getWeather(lat, lon)

@@ -1,6 +1,8 @@
 console.log("wallpaper.js");
 
-const baseUrl = "https://people.arcada.fi/~savonhen/startpage";
+const baseUrl = window.location.origin + "/~savonhen/startpage"; // change directories when hosting on other domain
+
+console.log(window.location.origin);
 
 function randomWallpaper() {
     const images = [
@@ -10,6 +12,7 @@ function randomWallpaper() {
         "/images/stromso_picture_collab2_lowRes.png",
         "/images/inkoon_saaristo_salmi.jpg",
         "/images/wallpaper.png"*/
+        "/images/arabianranta_spring_EDIT_compressed.jpg",
         "/images/kabböleterassi_sunset.jpg",
         "/images/kim_mökki.jpg"
     ];
