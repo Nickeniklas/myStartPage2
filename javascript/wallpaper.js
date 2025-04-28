@@ -1,6 +1,6 @@
 console.log("wallpaper.js");
 
-const baseUrl = window.location.origin + "/~savonhen/startpage"; // change directories when hosting on other domain
+const baseUrl = window.location.origin;
 
 console.log(window.location.origin);
 
