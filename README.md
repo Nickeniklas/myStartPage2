@@ -1,9 +1,13 @@
-# myStartPage2
+# static browser start page
+
+### Description
 Home page / start page for browser.
 
-Hotlinks
-Widgets, ex. clock, weather
-connect to API's
+hotlinks, clock, weather, changing background etc.
 
+### Tech stack
+**HTML, CSS & JS**
 
-project for fun. maybe even useful.
+### Weather data
+weather data fetched from https://openweathermap.org/
+
