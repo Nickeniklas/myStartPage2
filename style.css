@@ -1,7 +1,7 @@
 body {
     /*     default  =  cookie dough */
     background-color: #cdb79e;
-    background-size: cover;
+    background-size: fit;
     margin: 0;
 
     /*  70% in the middle   
