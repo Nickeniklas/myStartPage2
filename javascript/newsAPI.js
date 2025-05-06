@@ -6,6 +6,7 @@ async function fetchNewsData(url) {
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         console.log(data)
+        document.querySelector('#newsWidget').style.display="flex";
         return data;
     } catch (error) {
         console.error('Fetch error:', error);
@@ -14,8 +15,9 @@ async function fetchNewsData(url) {
 
 }
 // url - key word "trump"
-
-const url = "https://newsapi.org/v2/everything?q=trump&apiKey=
+const keyword = "trump";
+const apikey = "null";
+const url = `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${apikey}`;
 const randomArticleNum = Math.floor(Math.random() * 10)
 
 // fetch data and display it
