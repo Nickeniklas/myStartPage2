@@ -107,10 +107,14 @@ body {
     font-family: 'Text Me One';
     flex-direction: column;
     gap: 0px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     display: none;
+}
+#newsWidget h1, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #newsWidget a {
     text-decoration: none;

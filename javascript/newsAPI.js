@@ -15,8 +15,9 @@ async function fetchNewsData(url) {
 
 }
 // Get api key from LocalStorage
+let apikey = null;
 if (localStorage.getItem('news-api-key')) {
-    const apikey = localStorage.getItem('news-api-key');
+    apikey = localStorage.getItem('news-api-key');
 } else apikey = null;
 
 // URL - key word "trump"
@@ -28,11 +29,11 @@ const randomArticleNum = Math.floor(Math.random() * 10)
 // fetch data and display it
 fetchNewsData(url)
     .then(data => {
-        if (data.ok){
+        if (data.status == "ok"){
             document.querySelector('#newsWidget').innerHTML = `
         <a href=${data['articles'][randomArticleNum].url}>
             <h1>${data['articles'][randomArticleNum].title}</h1>
-            <p>${data['articles'][randomArticleNum].content}</p>
+            <p>${data['articles'][randomArticleNum].description}</p>
         </a>
         `
         }
