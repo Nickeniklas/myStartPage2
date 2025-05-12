@@ -21,10 +21,16 @@ function saveCloseSettings() {
     settingsUI.style.display = "none";
     isSettingsOpen = false;
 
-    //  API key to local storage
-    let key = document.querySelector("#apiInput").value;
-    localStorage.setItem('weather_key', key);
-    
+    // weather API key to local storage
+    let weatherKey = document.querySelector("#weatherApiKey").value;
+    if (weatherKey != "") {
+        localStorage.setItem('weather-api-key', weatherKey);
+    }
+    // news API
+    let newsKey = document.querySelector("#newsApiKey").value;
+    if (newsKey != "") {
+        localStorage.setItem('news-api-key', newsKey);
+    }    
     location.reload();
 }
 

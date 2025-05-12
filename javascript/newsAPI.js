@@ -14,9 +14,14 @@ async function fetchNewsData(url) {
     }
 
 }
-// url - key word "trump"
+// Get api key from LocalStorage
+if (localStorage.getItem('news-api-key')) {
+    const apikey = localStorage.getItem('news-api-key');
+} else apikey = null;
+
+// URL - key word "trump"
 const keyword = "trump";
-const apikey = "null";
+
 const url = `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${apikey}`;
 const randomArticleNum = Math.floor(Math.random() * 10)
 
