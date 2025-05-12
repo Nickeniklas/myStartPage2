@@ -33,7 +33,6 @@ document.querySelector("#saveSettingsButton").addEventListener('click', saveClos
 //  close settings from clicking outside of the box
 document.addEventListener('mouseup', function(event) {
     if (!event.target.closest("#settingsBox") && isSettingsOpen) {
-        console.log("Clicked outside of the excluded element");
         closeSettings();
     }
 });

@@ -23,10 +23,12 @@ const randomArticleNum = Math.floor(Math.random() * 10)
 // fetch data and display it
 fetchNewsData(url)
     .then(data => {
-        document.querySelector('#newsWidget').innerHTML = `
+        if (data.ok){
+            document.querySelector('#newsWidget').innerHTML = `
         <a href=${data['articles'][randomArticleNum].url}>
             <h1>${data['articles'][randomArticleNum].title}</h1>
             <p>${data['articles'][randomArticleNum].content}</p>
         </a>
         `
+        }
     })    

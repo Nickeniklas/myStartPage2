@@ -19,8 +19,25 @@
     <!--    HEADER  -->
     <div id="topMidContainer">
         <div id="settingsButton">
-            <img src="./images/Settings_icon(iOS)_scaled.png" alt="Settings Icon" />
+            <img src="./images/Settings_icon(iOS)_scaled.png" alt="Settings Icon" />        
         </div>
+        <!--    SETTINGS    -->
+        <div id="settingsUI">
+            <div id="settingsBox">
+                <form>
+                    <label for="weatherApiKey">Weather Api Key</label>
+                    <input type="text" id="weatherApiKey" name="weatherApiKey"><br><br>
+                    <label for="newsApiKey">News Api Key</label>
+                    <input type="text" id="newsApiKey" name="newsApiKey"><br><br>
+                    <input type="submit" id="saveSettingsButton" value="Save">
+                </form> 
+
+                <!--<h3>Weather API-key:</h3>
+                <input type="password" id="apiInput" placeholder="Enter API-key...">
+                <input type="button" id="saveSettingsButton" value="Save">-->
+            </div>
+        </div>
+
         <h1 id="welcomePhrase">Hello There!</h1>
         <div class="widget" id="dateWidget">
             <p id="showDate" class="">Date</p>
@@ -85,15 +102,6 @@
                 flashscore
             </div>
         </a>
-    </div>
-
-    <!--    SETTINGS    -->
-    <div id="settingsUI">
-        <div id="settingsBox">
-            <h2>Weather API-key:</h2>
-            <input type="password" id="apiInput" placeholder="Enter API-key...">
-            <input type="button" id="saveSettingsButton" value="Save">
-        </div>
     </div>
 
     <script src="./javascript/dateWidget.js"></script>
