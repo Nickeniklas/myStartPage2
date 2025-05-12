@@ -9,5 +9,14 @@ hotlinks, clock, weather, changing background etc.
 **HTML, CSS & JS**
 
 ### Weather data
-weather data fetched from https://openweathermap.org/
+weather data fetched from: 
+```
+https://openweathermap.org/
+```
+
+### News data
+news data fetched from:
+```
+https://newsapi.org/
+```
 
