@@ -104,6 +104,7 @@ body {
 }
 
 #newsWidget {
+    position: relative;
     font-family: 'Text Me One';
     flex-direction: column;
     gap: 0px;
@@ -124,6 +125,14 @@ body {
 #newsWidget a:link, #newsWidget a:visited {
     text-decoration: none;
     color: #ffff;
+}
+
+#newsSettings {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+
 }
 /* widgets END */
 

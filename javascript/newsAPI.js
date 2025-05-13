@@ -35,6 +35,11 @@ fetchNewsData(url)
             <h1>${data['articles'][randomArticleNum].title}</h1>
             <p>${data['articles'][randomArticleNum].description}</p>
         </a>
+        <div id="newsSettings">
+            <label for="newsKeyword">News Keyword</label>
+            <input type="text" id="newsKeyword" name="newsKeyword">
+            <input type="submit" id="saveSettingsButton" value="Save">
+        </div>
         `
         }
     })    
