@@ -17,7 +17,7 @@
 
 <body>
     <!--    HEADER  -->
-    <div id="topMidContainer">
+    <div id="fullHeader">
         <div id="settingsButton">
             <img src="./images/Settings_icon(iOS)_scaled.png" alt="Settings Icon" />        
         </div>
@@ -26,9 +26,9 @@
             <div id="settingsBox">
                 <form>
                     <label for="weatherApiKey">Weather Api Key</label>
-                    <input type="text" id="weatherApiKey" name="weatherApiKey"><br><br>
+                    <input type="text" id="weatherApiKey" name="weatherApiKey">
                     <label for="newsApiKey">News Api Key</label>
-                    <input type="text" id="newsApiKey" name="newsApiKey"><br><br>
+                    <input type="text" id="newsApiKey" name="newsApiKey">
                     <input type="submit" id="saveSettingsButton" value="Save">
                     <!--<label for="newsKeyword">News Keyword</label>
                     <input type="text" id="newsKeyword" name="newsKeyword"><br><br>
@@ -39,18 +39,20 @@
         <!-- MAIN HEADER -->
         <h1 id="welcomePhrase">Hello There!</h1>
         <!-- CLOCK AND DATE -->
-        <div class="widget" id="dateWidget">
-            <p id="showDate" class="">Date</p>
-            <h2 id="showTime" class="">Time</h2>
-            <p id="showWeek" class="">Week-</p>
+        <div id="dateWidget" class="widget">
+            <p id="showDate">Date</p>
+            <h2 id="showTime">Time</h2>
+            <p id="showWeek">Week-</p>
         </div>
         <!-- WEATHER WIDGET -->
-        <div class="widget" id="weatherWidget">
+        <a id="weatherLink" href="https://www.foreca.com/">
+        <div id="weatherWidget" class="widget">
             <div id="displayCity"></div>
             <div id="displayDegrees"></div>
         </div>
+        </a>
         <!-- NEWS WIDGET -->
-        <div class="widget" id="newsWidget">Couldn't load news...</div>
+        <div id="newsWidget" class="widget">Couldn't load news...</div>
     </div>
 
     <!--    HOTLINKS    -->

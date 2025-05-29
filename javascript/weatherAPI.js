@@ -15,7 +15,7 @@ async function getWeather(lat, lon) {
 
         const respJson = await resp.json();
         document.querySelector("#displayCity").innerHTML = respJson.name;
-        document.querySelector("#displayDegrees").innerHTML = respJson.main.temp + "°";
+        document.querySelector("#displayDegrees").innerHTML = respJson.main.temp.toFixed(1) + "°";
         
     } catch (error) {
         console.log("Weather api not working properly...");
