@@ -155,7 +155,7 @@ body {
     margin: auto;
     gap: 5px;
     font-size: 1.8rem;
-    color: #ffffff;
+    
 }
 
 .hotlinkButton {
@@ -164,6 +164,7 @@ body {
     border-radius: 5px;
 }
 .hotlinksContainer a {
+    color: #ffffff;
     text-decoration: none;
     font-family: "Fugaz One";
 }
