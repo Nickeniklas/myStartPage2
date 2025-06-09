@@ -43,5 +43,12 @@ document.addEventListener('mouseup', function(event) {
     }
 });
 
+// news hotlinks toggle
+newsHotlinks = document.querySelector('#newsHotlinksContainer')
+newsToggle = document.querySelector('#newsToggle')
 
+newsToggle.addEventListener('click', ()=> {
+    const isVisible = window.getComputedStyle(newsHotlinks).display !== "none";
+    newsHotlinks.style.display = isVisible ? "none" : "flex";
+})
 
