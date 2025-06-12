@@ -54,7 +54,6 @@ body {
     
 }
 #settingsBox input {
-    height: 2rem;
     width: 30rem;
     margin: 0.5rem;
 }
@@ -246,4 +245,11 @@ body {
         display: none;
     }
 
+    #settingsBox, #saveSettingsButton {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    #settingsBox input {
+        width: 15rem;
+    }
 }
