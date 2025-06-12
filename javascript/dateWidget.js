@@ -1,5 +1,5 @@
 console.log("dateWidget.js");
-// klockan
+// time
 function clock() {
     let now = new Date();
     const theTime = now.toLocaleTimeString();
@@ -7,7 +7,7 @@ function clock() {
 }
 setInterval(clock, 1000);
 
-// veckor
+// week
 let now = new Date();
 let startDate = new Date(now.getFullYear(), 0, 1); 
 let daysInYear = Math.floor((now - startDate) /
@@ -15,11 +15,11 @@ let daysInYear = Math.floor((now - startDate) /
 
 let week = Math.ceil(daysInYear / 7);
 
-document.querySelector('#showWeek').innerHTML+="<b>" + week + "</b>"; // Hjälp från geeksforgeeks.org https://www.geeksforgeeks.org/calculate-current-week-number-in-javascript/
+document.querySelector('#showWeek').innerHTML = "Week-" + week; // Hjälp från geeksforgeeks.org https://www.geeksforgeeks.org/calculate-current-week-number-in-javascript/
 
-// Datum
+// date
 let day = now.getDate();
 let month = now.getMonth()+1;
 let year = now.getFullYear();
 
-document.querySelector('#showDate').innerHTML="<b>" +day + "-" + month + "-" + year + "</b>";
+document.querySelector('#showDate').innerHTML = day + "-" + month + "-" + year;

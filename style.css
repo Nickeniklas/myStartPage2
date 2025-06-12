@@ -108,8 +108,9 @@ body {
 #showTime {
     font-size: 44px;
     margin: 0;
+    font-size: 2.5rem;
 }
-#dateWidget p {
+#showWeek, #showDate {
     font-size: 1.5rem;
 }
 
@@ -223,15 +224,26 @@ body {
 /* RESPONSIVE LAYOUT */
 /*PHONES*/
 @media (max-width: 600px) {
-  .hotlinksContainer, #newsWidget {
-    width: 100%;
-    font-size: 1rem;
-  }
-  #dateWidget {
-    margin-top: 1.5rem;
-  }
-  #welcomePhrase {
-    display: none;
-  }
+    .hotlinksContainer, #newsWidget {
+        width: 100%;
+        font-size: 1rem;
+    }
+    #dateWidget {
+        margin-top: 3rem;
+    }
+    #showTime {
+        font-size: 2rem;
+    }
+    #showDate, #showWeek {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    #weatherWidget{
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    #welcomePhrase {
+        display: none;
+    }
 
 }

@@ -47,8 +47,11 @@ document.addEventListener('mouseup', function(event) {
 newsHotlinks = document.querySelector('#newsHotlinksContainer')
 newsToggle = document.querySelector('#newsToggle')
 
-newsToggle.addEventListener('click', ()=> {
+newsToggle.addEventListener('click', (event)=> {
+    // toggle visibility
     const isVisible = window.getComputedStyle(newsHotlinks).display !== "none";
     newsHotlinks.style.display = isVisible ? "none" : "flex";
+    // scroll down the page
+    if (!isVisible) newsHotlinks.scrollIntoView({ behavior: "smooth" }); 
 })
 
