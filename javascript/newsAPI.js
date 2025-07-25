@@ -37,4 +37,5 @@ fetchNewsData(url)
         </a>
         `
         }
+        else console.log("error with the news fetch...")
     })    
