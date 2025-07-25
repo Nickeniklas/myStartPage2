@@ -1,9 +1,9 @@
 # static browser start page
 
 ### Description
-Home page / start page for browser.
+Home page / start page for a browser.
 
-hotlinks, clock, weather, changing background etc.
+hotlinks, clock, weather, news links, news widget.
 
 ### Tech stack
 **HTML, CSS & JS**
